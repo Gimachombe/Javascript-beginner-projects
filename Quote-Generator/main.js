@@ -14,9 +14,9 @@ function generateQuote() {
   while (true) {
       const randomIdx = Math.floor(Math.random() * quotes.length);
 
-       if (usedIndexes.has(randomIdx)) continue
+      if (usedIndexes.has(randomIdx)) continue
 
-      const quote = quotes[randomIdx];
+      const quote = quotes[randomIdx];    
       quoteElement.innerHTML = quote;
       usedIndexes.add(randomIdx)
       break
